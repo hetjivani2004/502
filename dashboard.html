@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | HealthMonitor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>HealthMonitor</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="tips.html">Health Tips</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Overview -->
+    <section class="dashboard">
+        <h2 class="section-title animate__animated animate__fadeInDown">Your Health Dashboard</h2>
+        <div class="overview">
+            <div class="card animate__animated animate__fadeInLeft">
+                <h3>Daily Steps</h3>
+                <p>Steps Today: <strong>8,950</strong></p>
+                <canvas id="stepsChart"></canvas>
+            </div>
+            <div class="card animate__animated animate__fadeInUp">
+                <h3>Calories Burned</h3>
+                <p>Calories Today: <strong>1,450</strong></p>
+                <canvas id="caloriesChart"></canvas>
+            </div>
+            <div class="card animate__animated animate__fadeInRight">
+                <h3>Sleep Hours</h3>
+                <p>Hours Last Night: <strong>7.5</strong></p>
+                <canvas id="sleepChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Entry Section -->
+    <section class="data-entry">
+        <h2 class="section-title">Log Your Health Data</h2>
+        <form class="entry-form">
+            <div class="form-group">
+                <label for="steps">Steps:</label>
+                <input type="number" id="steps" name="steps" placeholder="Enter steps" required>
+            </div>
+            <div class="form-group">
+                <label for="calories">Calories:</label>
+                <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
+            </div>
+            <div class="form-group">
+                <label for="sleep">Sleep (hours):</label>
+                <input type="number" id="sleep" name="sleep" placeholder="Enter sleep hours" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HealthMonitor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
