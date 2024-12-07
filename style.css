@@ -1,0 +1,548 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #3b5998;
+    color: #fff;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background: #ffcc00;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: #ffc107;
+}
+
+/* Features Section */
+.features {
+    padding: 3em 2em;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #3b5998;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.tile {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tile h3 {
+    color: #ffcc00;
+    margin-bottom: 0.5em;
+}
+
+.tile p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: #3b5998;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+
+
+/* ################################################################################################### */
+/* Authentication Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: #f9f9f9;
+}
+
+.auth-forms {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-wrapper {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2em;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.form-wrapper label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-wrapper input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-wrapper .btn {
+    width: 100%;
+    padding: 0.8em;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.form-wrapper .btn:hover {
+    background: #3e8e41;
+}
+
+
+/* ############################################################################################## */
+/* Dashboard Styling */
+.dashboard-container {
+    padding: 2em;
+    background: #f9f9f9;
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.data-entry-form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.data-entry-form h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.data-entry-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.data-entry-form input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.health-trends {
+    padding: 2em;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.health-trends canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* ############################################################################################### */
+
+/* Health Tips Page Styling */
+.tips-container {
+    padding: 2em;
+    background: #f9f9f9;
+}
+
+.tips-container h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.tips-section, .manual-input {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tips-box {
+    padding: 1em;
+    background: #e8f5e9;
+    border-radius: 5px;
+    border: 1px solid #c8e6c9;
+    margin-top: 1em;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.manual-input form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.manual-input form input, .manual-input form select {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Dashboard Section */
+.dashboard {
+    padding: 3em 2em;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.card {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #3b5998;
+    margin-bottom: 0.5em;
+}
+
+/* Data Entry Section */
+.data-entry {
+    padding: 3em 2em;
+    background: #fff;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.entry-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #3b5998;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ffc107;
+}
+
+
+
+/* Health Tips Section */
+.health-tips {
+    padding: 3em 2em;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.tip-card {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card h3 {
+    color: #3b5998;
+    margin-bottom: 0.5em;
+}
+
+.tip-card img {
+    width: 80px;
+    margin-top: 1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the login form */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Form Heading */
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Paragraph below the heading */
+p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.remember-me label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button */
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Action Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
